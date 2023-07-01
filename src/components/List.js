@@ -16,7 +16,9 @@ const List = () => {
 
   return <div>
     {items.map((item) =>(
-      <p>{item.id} - {item.name}</p>
+      <p key={item.id}>
+        {item.id} - {item.name}
+      </p>
     ))}
   </div>;
 };
